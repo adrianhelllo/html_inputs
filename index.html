@@ -79,7 +79,7 @@
           />
         </p>
         <p>
-          <label for="coffee">Favorite Coffee:</label>
+          <!-- <label for="coffee">Favorite Coffee:</label>
           <select name="coffee" id="coffee" multiple size="5">
             <optgroup label="Coffees">
               <option value="regular coffee">Regular Coffee</option>
@@ -92,7 +92,18 @@
               <option value="cortado">Cortado</option>
             </optgroup>
             <option value="other">Other</option>
-          </select>
+          </select> -->
+
+          <label for="coffee">Favorite Coffee</label>
+          <input type="text" name="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="coffee">
+            <option value="latte">
+            <option value="espresso">
+            <option value="cortado">
+            <option value="americano">
+            <option value="other">
+          </datalist>
         </p>
       </form>
     </article>
