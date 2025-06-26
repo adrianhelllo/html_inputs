@@ -14,87 +14,89 @@
       <p>I'd really like to hear from you!</p>
 
       <form action="https://httpbin.org/get" method="get">
-        <p>
-          <label for="firstName">First Name: </label>
-          <!--The for attribute shows what the label is asking the user for -->
-          <input
-            type="text"
-            name="firstname"
-            id="firstName"
-            placeholder="Jane"
-            autocomplete="on"
-            required
-            autofocus
-          />
-        </p>
-        <p>
-          <label for="lastName">Last Name: </label>
-          <input
-            type="text"
-            name="lastName"
-            id="lastName"
-            placeholder="Doe"
-            autocomplete="on"
-            required
-          />
-          <!-- the name attribute should, and the id attribute Has to match the for attribute found in the label tag -->
-        </p>
-        <p>
-          <label for="password">Password: </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="IL0veC4ts_4321!"
-            autocomplete="on"
-            required
-          />
-        </p>
-        <p>
-          <label for="phone">Phone: </label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="555555555"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            autocomplete="on"
-            required
-          />
-          <!-- pattern explanation: square brackets: accepted digits between 0 and 9. curly braces: number of digits of those -->
-        </p>
-        <p>
-          <label for="decade">Favorite Decade: </label>
-          <input
-            type="number"
-            name="decade"
-            id="decade"
-            placeholder="555555555"
-            min="1950"
-            max="2020"
-            step="10"
-            value="1980"
-            autocomplete="on"
-            required
-          />
-        </p>
-        <p>
-          <!-- <label for="coffee">Favorite Coffee:</label>
-          <select name="coffee" id="coffee" multiple size="5">
-            <optgroup label="Coffees">
-              <option value="regular coffee">Regular Coffee</option>
-              <option value="iced coffee">Iced Coffee</option>
-            </optgroup>
-            <optgroup label="Espresso Drinks">
-              <option value="latte" selected>Latte</option>
-              <option value="cappuccino">Cappuccino</option>
-              <option value="americano">Americano</option>
-              <option value="cortado">Cortado</option>
-            </optgroup>
-            <option value="other">Other</option>
-          </select> -->
+        <fieldset>
+          <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name: </label>
+            <!--The for attribute shows what the label is asking the user for -->
+            <input
+              type="text"
+              name="firstname"
+              id="firstName"
+              placeholder="Jane"
+              autocomplete="on"
+              required
+              autofocus
+            />
+          </p>
+          <p>
+            <label for="lastName">Last Name: </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+              autocomplete="on"
+              required
+            />
+            <!-- the name attribute should, and the id attribute Has to match the for attribute found in the label tag -->
+          </p>
+          <p>
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="IL0veC4ts_4321!"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone: </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              autocomplete="on"
+              required
+            />
+            <!-- pattern explanation: square brackets: accepted digits between 0 and 9. curly braces: number of digits of those -->
+          </p>
+          <p>
+            <label for="decade">Favorite Decade: </label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              placeholder="555555555"
+              min="1950"
+              max="2020"
+              step="10"
+              value="1980"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="latte" selected>Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="americano">Americano</option>
+                <option value="cortado">Cortado</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
 
-          <label for="coffee">Favorite Coffee</label>
+            <!-- <label for="coffee">Favorite Coffee</label>
           <input type="text" name="coffee" list="coffee-list">
           <datalist id="coffee-list">
             <option value="coffee">
@@ -103,8 +105,9 @@
             <option value="cortado">
             <option value="americano">
             <option value="other">
-          </datalist>
-        </p>
+          </datalist> -->
+          </p>
+        </fieldset>
       </form>
     </article>
   </body>
